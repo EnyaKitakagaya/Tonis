@@ -31,8 +31,8 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <table>
 <th>テーブル:riyou</th>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）</td></tr>
-<tr><td>riyou_start</td><td>timestamp</td><td>利用開始時刻</td></tr>
-<tr><td>riyou_end</td><td>timestamp</td><td>利用終了</td></tr>
+<tr><td>riyou_start</td><td>timestamp</td><td>入室時刻</td></tr>
+<tr><td>riyou_end</td><td>timestamp</td><td>退出時刻</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
 <br>
