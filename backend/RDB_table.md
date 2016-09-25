@@ -1,11 +1,11 @@
 # データベースの設計
-mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだったので採用）<br>
-ホスト名: localhost （とりあえず、自サーバで動かしてみる）<br>
+DBMS:mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだったので採用）<br>
+ホスト名:localhost （とりあえず、自サーバで動かしてみる）<br>
 データベース名:Tonis_db<br>
 
 <br>
 <table>
-<td>テーブル:card</td><td>番頭立会（番頭のフェリカ必要）のもと、カード作成する。</td>
+<td>テーブル:card</td><td>番頭が、会員カードを作成する（番頭のフェリカ必要）。</td>
 <tr><td>cardid</td><td>varchar(32)</td><td>フェリカカードのID</td></tr>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）フェリカカードは無くす可能性あるので、会員番号は必要。unique属性にしない。</td></tr>
 <tr><td>validity</td><td>int(4)</td><td>カード無くしたり、作り直したら古いのを失効させる</td></tr>
@@ -41,7 +41,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 </table>
 <br>
 <table>
-<td>テーブル:kaihi</td><td>番頭立会いのもと（番頭のフェリカと会員のフェリカ必要）番頭がデータ入力</td>
+<td>テーブル:kaihi</td><td>番頭が会費に関するデータ入力（番頭のフェリカと会員のフェリカが必要）</td>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（主キー）</td></tr>
 <tr><td>payday</td><td>date</td><td>支払日</td></tr>
 <tr><td>valid_from</td><td>date</td><td>開始日</td></tr>
