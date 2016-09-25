@@ -5,7 +5,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 
 <br>
 <table>
-<td>テーブル:card</td><td>番頭立会（番頭のフェリカ必要）のもと、カード作成し、通常は、これに連動して会員登録（会員が会員情報を入力）する。</td>
+<td>テーブル:card</td><td>番頭立会（番頭のフェリカ必要）のもと、カード作成する。</td>
 <tr><td>cardid</td><td>varchar(32)</td><td>フェリカカードのID</td></tr>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）フェリカカードは無くす可能性あるので、会員番号は必要。unique属性にしない。</td></tr>
 <tr><td>validity</td><td>int(4)</td><td>カード無くしたり、作り直したら古いのを失効させる</td></tr>
@@ -16,7 +16,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 </table>
 <br>
 <table>
-<th>テーブル:kaiin</th>
+<td>テーブル:kaiin</td><td>通常は、カード作成に連動して会員登録（会員が会員情報を入力）する。</td>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（主キー）。会員番号は、本人にメール送信し、忘れないようにしてもらう。</td></tr>
 <tr><td>penname</td><td>varchar(32)</td><td>ハンドル名</td></tr>
 <tr><td>sei</td><td>varchar(32)</td><td>姓</td></tr>
