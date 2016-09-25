@@ -11,6 +11,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>validity</td><td>int(4)</td><td>カード無くしたり、作り直したら古いのを失効させる</td></tr>
 <tr><td>by_id</td><td>varchar(32)</td><td>カード作成者（番頭ID）</td></tr>
 <tr><td>creatdate</td><td>timestamp</td><td>作成日</td></tr>
+<tr><td>invdate</td><td>timestamp</td><td>失効日</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
 <br>
