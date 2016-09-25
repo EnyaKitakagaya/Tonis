@@ -5,7 +5,7 @@ mysqlを使う<br>
 
 
 <table>
-<th>テーブル名1:card_id</th>
+<th>テーブル:card_id</th>
 <tr><td>cardid</td><td>varchar(32)</td><td>フェリカカードのID</td></tr>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
@@ -14,7 +14,7 @@ mysqlを使う<br>
 
 
 <table>
-<th>テーブル名2:kaiin</th>
+<th>テーブル:kaiin</th>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号</td></tr>
 <tr><td>penname</td><td>varchar(32)</td><td>ハンドル名</td></tr>
 <tr><td>sei</td><td>varchar(32)</td><td>姓</td></tr>
