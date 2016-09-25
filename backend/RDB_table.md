@@ -28,8 +28,10 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
 <br>
+<table>
 <th>テーブル:kaihi</th>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）</td></tr>
 <tr><td>payday</td><td>date</td><td>支払日</td></tr>
 <tr><td>valid_from</td><td>date</td><td>開始日</td></tr>
 <tr><td>valid_to</td><td>date</td><td>終了日</td></tr>
+</table>
