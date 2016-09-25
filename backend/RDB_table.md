@@ -13,7 +13,6 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
 <br>
-<br>
 <table>
 <th>テーブル:kaiin</th>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）</td></tr>
@@ -24,10 +23,13 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>tel</td><td>varchar(32)</td><td>電話番号</td></tr>
 <tr><td>birthy</td><td>int(4)</td><td>誕生年</td></tr>
 <tr><td>sex</td><td>int(4)</td><td>性別</td></tr>
-<tr><td>banto</td><td>int(4)</td><td>身分（下位ビットから1:一般会員、2:番頭、3:インストラクタ、4:法人社員）</td></tr>
+<tr><td>banto</td><td>int(4)</td><td>身分（下位ビットから1:一般個人会員、2:一般団体会員、3:番頭、4:インストラクタ、5:法人側社員）</td></tr>
 <tr><td>pin</td><td>varchar(128)</td><td>暗唱番号（md5ハッシュ値）</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
-
-
-
-
+</table>
+<br>
+<th>テーブル:kaihi</th>
+<tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）</td></tr>
+<tr><td>payday</td><td>date</td><td>支払日</td></tr>
+<tr><td>valid_from</td><td>date</td><td>開始日</td></tr>
+<tr><td>valid_to</td><td>date</td><td>終了日</td></tr>
