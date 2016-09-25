@@ -10,6 +10,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）フェリカカードは無くす可能性あるので、会員番号は必要。unique属性にしない。</td></tr>
 <tr><td>validity</td><td>int(4)</td><td>カード無くしたり、作り直したら古いのを失効させる</td></tr>
 <tr><td>by_id</td><td>varchar(32)</td><td>カード作成者（番頭ID）</td></tr>
+<tr><td>regdate</td><td>timestamp</td><td>登録時刻</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
 <br>
@@ -25,6 +26,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>sex</td><td>int(4)</td><td>性別</td></tr>
 <tr><td>mibun</td><td>int(4)</td><td>身分（下位ビットから1:一般個人会員、2:一般団体会員、3:番頭、4:インストラクタ、5:法人側社員）</td></tr>
 <tr><td>pin</td><td>varchar(32)</td><td>暗唱番号（md5ハッシュ値を16進数32文字で）</td></tr>
+<tr><td>regdate</td><td>timestamp</td><td>登録時刻</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
 <br>
