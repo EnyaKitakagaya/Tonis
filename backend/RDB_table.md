@@ -9,7 +9,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>cardid</td><td>varchar(32)</td><td>フェリカカードのID</td></tr>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）フェリカカードは無くす可能性あるので、会員番号は必要。unique属性にしない。</td></tr>
 <tr><td>validity</td><td>int(4)</td><td>カード無くしたり、作り直したら古いのを失効させる</td></tr>
-<tr><td>by_id</td><td>varchar(32)</td><td>カード作成者（番頭ID）</td></tr>
+<tr><td>by_id</td><td>varchar(32)</td><td>カード作成／データ修正者（番頭ID）</td></tr>
 <tr><td>creatdate</td><td>timestamp</td><td>作成日</td></tr>
 <tr><td>invdate</td><td>timestamp</td><td>失効日</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
@@ -17,7 +17,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <br>
 <table>
 <th>テーブル:kaiin</th>
-<tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）</td></tr>
+<tr><td>id</td><td>varchar(32)</td><td>会員番号（主キー）</td></tr>
 <tr><td>penname</td><td>varchar(32)</td><td>ハンドル名</td></tr>
 <tr><td>sei</td><td>varchar(32)</td><td>姓</td></tr>
 <tr><td>mei</td><td>varchar(32)</td><td>名</td></tr>
@@ -28,12 +28,13 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>mibun</td><td>int(4)</td><td>身分（下位ビットから1:一般個人会員、2:一般団体会員、3:番頭、4:インストラクタ、5:法人側社員）</td></tr>
 <tr><td>pin</td><td>varchar(32)</td><td>暗唱番号（md5ハッシュ値を16進数32文字で）</td></tr>
 <tr><td>creatdate</td><td>timestamp</td><td>作成日</td></tr>
+<tr><td>by_id</td><td>varchar(32)</td><td>データ作成／修正者（番頭ID）</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
 <br>
 <table>
 <th>テーブル:riyou</th>
-<tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）</td></tr>
+<tr><td>id</td><td>varchar(32)</td><td>会員番号（主キー）</td></tr>
 <tr><td>riyou_start</td><td>timestamp</td><td>入室時刻</td></tr>
 <tr><td>riyou_end</td><td>timestamp</td><td>退出時刻</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
@@ -41,9 +42,10 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <br>
 <table>
 <th>テーブル:kaihi</th>
-<tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）</td></tr>
+<tr><td>id</td><td>varchar(32)</td><td>会員番号（主キー）</td></tr>
 <tr><td>payday</td><td>date</td><td>支払日</td></tr>
 <tr><td>valid_from</td><td>date</td><td>開始日</td></tr>
 <tr><td>valid_to</td><td>date</td><td>終了日</td></tr>
+<tr><td>by_id</td><td>varchar(32)</td><td>データ作成／修正者（番頭ID）</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
