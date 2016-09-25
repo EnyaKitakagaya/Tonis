@@ -10,7 +10,8 @@ mysqlを使う<br>
 
 
 テーブル名2:kaiin<br>
-id varchar(32) 会員番号<br>
+<table>
+<tr><td>id</td><td>varchar(32)</td><td>会員番号</td></tr><br>
 penname varchar(32) ハンドル名<br>
 sei varchar(32) 姓<br>
 mei varchar(32) 名<br>
