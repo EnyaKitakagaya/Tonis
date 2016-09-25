@@ -5,7 +5,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 
 <br>
 <table>
-<th>テーブル:card_id</th>
+<th>テーブル:card</th>
 <tr><td>cardid</td><td>varchar(32)</td><td>フェリカカードのID</td></tr>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）フェリカカードは無くす可能性あるので、会員番号は必要。unique属性にしない。</td></tr>
 <tr><td>validity</td><td>int(4)</td><td>カード無くしたり、作り直したら古いのを失効させる</td></tr>
