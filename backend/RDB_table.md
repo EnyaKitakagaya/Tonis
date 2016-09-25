@@ -7,7 +7,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <table>
 <th>テーブル:card_id</th>
 <tr><td>cardid</td><td>varchar(32)</td><td>フェリカカードのID</td></tr>
-<tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）フェリカカードは無くす可能性あるので、会員番号は必要</td></tr>
+<tr><td>id</td><td>varchar(32)</td><td>会員番号（自動生成が楽）フェリカカードは無くす可能性あるので、会員番号は必要。unique属性にしない。</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 </table>
 <br>
