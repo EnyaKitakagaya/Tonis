@@ -24,7 +24,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 <tr><td>tel</td><td>varchar(32)</td><td>電話番号</td></tr>
 <tr><td>birthy</td><td>int(4)</td><td>誕生年</td></tr>
 <tr><td>sex</td><td>int(4)</td><td>性別</td></tr>
-<tr><td>banto</td><td>int(4)</td><td>番頭（身分）</td></tr>
+<tr><td>banto</td><td>int(4)</td><td>身分（下位ビットから1:機材利用可能、2:番頭、3:インストラクタ、4:法人社員）</td></tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
 
 
