@@ -3,16 +3,18 @@ mysqlを使う<br>
 ホスト名: localhost <br>
 データベース名:Tonis_db<br>
 
-テーブル名1:card_id<br>
+
 <table>
+テーブル名1:card_id<br>
 <tr><td>cardid</td><td>varchar(32)</td><td>フェリカカードのID<tr>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号<tr>
 <tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）<tr>
 
 
 
-テーブル名2:kaiin<br>
+
 <table>
+テーブル名2:kaiin<br>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号</td></tr>
 <tr><td>penname</td><td>varchar(32)</td><td>ハンドル名<tr>
 <tr><td>sei</td><td>varchar(32)</td><td>姓<tr>
