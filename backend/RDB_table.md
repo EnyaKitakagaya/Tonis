@@ -33,7 +33,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 </table>
 <br>
 <table>
-<th>テーブル:riyou</th>
+<td>テーブル:riyou</td><td>入退出時のカード操作により都度テーブル生成</td>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（主キー）</td></tr>
 <tr><td>riyou_start</td><td>timestamp</td><td>入室時刻</td></tr>
 <tr><td>riyou_end</td><td>timestamp</td><td>退出時刻</td></tr>
@@ -41,7 +41,7 @@ mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだ�
 </table>
 <br>
 <table>
-<th>テーブル:kaihi</th>
+<td>テーブル:kaihi</td><td>番頭立会いのもと（番頭のフェリカと会員のフェリカ必要）番頭がデータ入力</td>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号（主キー）</td></tr>
 <tr><td>payday</td><td>date</td><td>支払日</td></tr>
 <tr><td>valid_from</td><td>date</td><td>開始日</td></tr>
