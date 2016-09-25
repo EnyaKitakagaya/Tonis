@@ -14,7 +14,7 @@ mysqlを使う<br>
 
 
 <table>
-テーブル名2:kaiin<br>
+<th>テーブル名2:kaiin</th>
 <tr><td>id</td><td>varchar(32)</td><td>会員番号</td></tr>
 <tr><td>penname</td><td>varchar(32)</td><td>ハンドル名<tr>
 <tr><td>sei</td><td>varchar(32)</td><td>姓<tr>
