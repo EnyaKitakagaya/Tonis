@@ -1,6 +1,6 @@
 # データベースの設計
-mysqlを使う<br>
-ホスト名: localhost <br>
+mysqlを使う（なんでもいいけど、phpmyadminが使いやすそうだったので採用）<br>
+ホスト名: localhost （とりあえず、自サーバで動かしてみる）<br>
 データベース名:Tonis_db<br>
 
 
