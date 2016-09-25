@@ -5,9 +5,9 @@ mysqlを使う<br>
 
 テーブル名1:card_id<br>
 <table>
- cardid||varchar(32)||フェリカカードのID<br>
- id varchar(32) 会員番号<br>
- moddate timestamp データ更新時刻（自動）<br>
+<tr><td>cardid</td><td>varchar(32)</td><td>フェリカカードのID<tr>
+<tr><td>id</td><td>varchar(32)</td><td>会員番号<tr>
+<tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）<tr>
 
 
 
