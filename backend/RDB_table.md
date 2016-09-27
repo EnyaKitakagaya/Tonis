@@ -12,7 +12,7 @@ DBMS:mysqlを使う（なんでもいいけど、phpmyadminが使いやすそう
 <tr><td>by_id</td><td>varchar(32)</td><td>カード作成／データ修正者（番頭ID）</td></tr>
 <tr><td>creatdate</td><td>timestamp</td><td>作成日</td></tr>
 <tr><td>invdate</td><td>timestamp</td><td>失効日</td></tr>
-<tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動）</td></tr>
+<tr><td>moddate</td><td>timestamp</td><td>データ更新時刻（自動:current_timestamp on update current_timestamp）</td></tr>
 </table>
 <br>
 <table>
