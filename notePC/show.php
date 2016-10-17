@@ -4,26 +4,7 @@
 // カードをかざして会員登録情報を表示するツール by 2016-10-16 penkich
 //
 
-$handle = fopen("/tmp/nfcid", "r");
-$nfcid = substr(fgets($handle),-16);
-
-$dbhost = 'XXXXXXXXXX.XXXXXXXXXXX.XXXXXXXXXX.rds.amazonaws.com';
-$dbname = 'fablabkitakagaya';
-$dsn = 'mysql:host='.$dbhost.';dbname='.$dbname;
-$user = 'XXXXXXXXXXX';
-$pass = 'XXXXXXXXXXX';
-$options = array(
-    PDO::MYSQL_ATTR_SSL_CA => '/home/enya/rds-combined-ca-bundle.pem',
-    PDO::MYSQL_ATTR_SSL_KEY => 'NONE',
-    PDO::MYSQL_ATTR_SSL_CERT => 'NONE'
-);
-
-$dbh = new PDO($dsn,$user,$pass,$options);
-
-if (!$dbh) {
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    exit;
-}
+include "init.inc";
 
 $sql = "select userid from card where cardid = '$nfcid'";
 $stmt = $dbh->query($sql);
