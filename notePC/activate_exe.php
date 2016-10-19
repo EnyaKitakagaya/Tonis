@@ -14,8 +14,6 @@ foreach ($mibun as $key => $v){
   $sum += $v;
 }
 
-
-
 $sql = "select userid from card where cardid='$banto_cardid'";
 $stmt = $dbh->query($sql);
 $result = $stmt->fetch(PDO::FETCH_ASSOC);
