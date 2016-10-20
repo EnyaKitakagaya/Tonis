@@ -44,7 +44,7 @@ $stmt->bindValue(':sex',$sex);
 $stmt->bindValue(':birthy',$birthy);
 $stmt->bindValue(':place',$place);
 $stmt->bindValue(':postal',$postal);
-$dbh->exec($sql);
+$stmt->execute();
                       
 print "登録しました。このPCを番頭さんへ渡してください。";
 print "<a href=index.php>メニューに戻る</a>";
