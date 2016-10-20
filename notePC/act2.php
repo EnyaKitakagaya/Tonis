@@ -32,8 +32,20 @@ do {
 
 $sql = "insert into card(cardid,userid) values('$nfcid','$userid')";
 $dbh->exec($sql);
-$sql = "insert into kaiin(userid,sei,mei,penname,mail,tel,age,sex,birthy,place,postal) values('$userid','$sei','$mei','$penname','$mail','$tel','$age','$sex','$birthy','$place','$postal')";
+$stmt = $dbh->prepare("insert into kaiin(userid,sei,mei,penname,mail,tel,age,sex,birthy,place,postal) values(:userid,:sei,:mei,:penname,:mail,:tel,:age,:sex,:birthy,:place,:postal)";
+$stmt->bindValue(':userid',$userid);
+$stmt->bindValue(':sei',$sei);
+$stmt->bindValue(':mei',$mei);
+$stmt->bindValue(':penname',$penname);
+$stmt->bindValue(':mail',$mail);
+$stmt->bindValue(':tel',$tel);
+$stmt->bindValue(':age',$age);
+$stmt->bindValue(':sex',$sex);
+$stmt->bindValue(':birthy',$birthy);
+$stmt->bindValue(':place',$place);
+$stmt->bindValue(':postal',$postal);
 $dbh->exec($sql);
+                      
 print "登録しました。このPCを番頭さんへ渡してください。";
 print "<a href=index.php>メニューに戻る</a>";
 ?>
