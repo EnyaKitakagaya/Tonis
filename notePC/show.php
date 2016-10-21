@@ -7,15 +7,15 @@
    include "init.inc";
    include "amazonrds.inc";
 
-   $sql = "select * from card where cardid = '$nfcid'";
+   $sql = "select *,created_at +interval +9 hour as card_created_at from card where cardid = '$nfcid'";
    $stmt = $dbh->query($sql);
    $result = $stmt->fetch(PDO::FETCH_ASSOC);
    $userid = $result['userid'];
    $validity = $result['validity'];
-   $card_created_at = $result['created_at'];
+   $card_created_at = $result['card_created_at'];
    $card_by_id = $result['by_id'];
 
-   $sql = "select * from kaiin where userid = '$userid'";
+   $sql = "select *,created_at +interval +9 hour as jst_created_at from kaiin where userid = '$userid'";
    $stmt = $dbh->query($sql);
    $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
@@ -31,7 +31,7 @@
    $postal = $result['postal'];
    $by_id = $result['by_id'];
    $mibun = $result['mibun'];
-   $created_at = $result['created_at'];
+   $created_at = $result['jst_created_at'];
    $by_id = $result['by_id'];
 ?>
 <body>
