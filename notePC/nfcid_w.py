@@ -4,6 +4,7 @@
 # ubuntu をインストールした会員カード登録用ノートPCの /etc/rc.local に置いておき、自動起動させる。
 # カード読み取りごとに、サウンドファイルを鳴らす（ラズパイならI/Oポートにブザーつないで鳴らすとよい）。
 # サウンドファイルは、フリーのものが種々公開されてるので、利用するとよい。
+# 例えば、http://freewavesamples.com/e-mu-proteus-fx-tubebels-c6.wav
 
 import nfc
 import re
