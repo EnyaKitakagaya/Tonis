@@ -14,8 +14,11 @@ hm = time.strftime("%X",time.localtime())[0:5]
 
 def getid(tag):
     global id
-    a = '%s' % tag
-    id = re.findall("ID=([0-9A-F]*)",a)[0]
+    try:
+        a = '%s' % tag
+        id = re.findall("ID=([0-9A-F]*)",a)[0]
+    except:
+        id = "BAD"
     os.system("aplay /home/pi/bell.wav &") 
 
 con = mysql.connector.connect(user=‘XXXXXXXXXX’, password=‘XXXXXXXXX’, host=‘XXXXXXXXXX.rds.amazonaws.com', database='fablabkitakagaya', charset='utf8', ssl_ca='/home/pi/XXXXXXXXX.pem')
