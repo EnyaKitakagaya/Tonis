@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>the list</title>
+</head>
+<body>
+<h1>This is Test</h1>
+<table>
+    <th></th>
+    {% for num in message %}
+    <tr>
+        <td>{{ num }}</td>
+        <td>text {{ num }} text</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
